@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-xs">
-          <span>© 2025 Trignotech. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Trignotech. All rights reserved.</span>
           <span className="flex gap-4">
             <a href="#" className="hover:text-[#6BB3F0] transition-colors no-underline">Privacy Policy</a>
             <span className="text-white/20">·</span>
