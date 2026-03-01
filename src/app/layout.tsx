@@ -4,7 +4,7 @@ import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
-const siteUrl = "https://trignotech.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://trignotech-web.vercel.app";
 const siteTitle = "Trignotech — Technology Consultancy";
 const siteDescription =
   "Trignotech is your end-to-end technology partner — Salesforce, Full Stack, Mobile Apps, DevOps, Payment Integrations, and AI-powered Chatbots.";

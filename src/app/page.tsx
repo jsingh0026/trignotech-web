@@ -7,12 +7,14 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollAnimations from "@/components/ScrollAnimations";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://trignotech-web.vercel.app";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Trignotech",
-  url: "https://trignotech.com",
-  logo: "https://trignotech.com/icon.svg",
+  url: siteUrl,
+  logo: `${siteUrl}/icon.svg`,
   email: "info@trignotech.com",
   description:
     "Your end-to-end technology partner — Salesforce, Full Stack, Mobile Apps, DevOps, Payment Integrations, and AI-powered Chatbots.",
@@ -30,6 +32,7 @@ const jsonLd = {
     "https://twitter.com/trignotech",
     "https://github.com/trignotech",
   ],
+
 };
 
 export default function Home() {
